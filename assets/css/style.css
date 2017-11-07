@@ -1,0 +1,63 @@
+html {
+    position: relative;
+    min-height: 100%;
+    font-family: 'VT323', monospace;
+}
+body{
+    font-size: 24px;
+    background-color: red; 
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Peralta', cursive; 
+    color: white; 
+}
+hr {
+    border-style: solid;  
+}
+strong {
+    font-weight: bold; 
+}
+.header {
+    text-align: center; 
+    background-image: url("../images/landscape.png");
+    background-size: 100% 100%;  
+    padding: 10px 0px
+}
+h1 {
+    font-size: 64px;
+}
+h2 {
+    font-size: 32px; 
+}
+/* .background {
+    background-image: url("../images/town.jpg");
+    background-size: 100% 100%; 
+    background-origin: content-box;
+    min-height: 100%; 
+} */
+.container {
+    margin: 10px 10px;
+
+}
+.directions {
+    border: 3px solid black; 
+    text-align: center; 
+    padding: 10px 20px; 
+    margin: 10px 0px 10px 0px; 
+}
+.gameScreen {
+    text-align: center; 
+    border: 3px solid black;
+    padding: 10px 20px; 
+}
+.seperator {
+    padding: 20px;
+}
+#places {
+    font-size: 50px; 
+    letter-spacing: 5px; 
+
+}
+.stats {
+    text-align: left;
+}

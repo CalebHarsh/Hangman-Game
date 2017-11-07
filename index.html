@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <!-- CSS link files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Font Styling  -->
+    <link href="https://fonts.googleapis.com/css?family=Peralta|VT323" rel="stylesheet">
+    <!-- Javascript linked files -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h2>Western</h2>
+        <h1>Hangman</h1>
+    </div>
+    <div class="container">
+        <div class="directions">
+            <p>
+                Welcome to Hangman. To play: press a letter to try to guess the word. Be careful though you only get <strong>7 guesses.</strong> Have fun!
+            </p>
+        </div>
+        <div class="gameScreen">
+            <span id="gameDirections">
+                Press any button to play
+            </span>
+            <div class="seperator"></div>
+            <span id="places"></span>
+            <div class="seperator"></div>
+            <div class="stats">
+            <span id="stat"></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
