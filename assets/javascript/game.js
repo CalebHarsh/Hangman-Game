@@ -19,8 +19,8 @@ var  newGame = {
  
 document.onkeyup = function(event) {
     if(newGame.guesses === 0){
-        alert("GAME OVER \n You ran out of guesses. The word was " + 
-        newGame.word + ". <br>Press OK to try again.");
+        alert("GAME OVER \nYou ran out of guesses. The word was " + 
+        newGame.word + ". \nPress OK to try again.");
         newGame.win = true;  
           
     }

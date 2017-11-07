@@ -29,29 +29,29 @@ h1 {
 h2 {
     font-size: 32px; 
 }
-/* .background {
-    background-image: url("../images/town.jpg");
-    background-size: 100% 100%; 
-    background-origin: content-box;
-    min-height: 100%; 
-} */
-.container {
-    margin: 10px 10px;
 
-}
-.directions {
-    border: 3px solid black; 
-    text-align: center; 
-    padding: 10px 20px; 
-    margin: 10px 0px 10px 0px; 
+.background {
+    background-image: url("../images/wanted.jpg");
+    background-size: 100%; 
+    background-repeat: no-repeat; 
+    height: 700px;
+    width: 60%;
+    margin: 10px auto; 
+    position: relative; 
 }
 .gameScreen {
-    text-align: center; 
-    border: 3px solid black;
-    padding: 10px 20px; 
+    text-align: center;
+    position: absolute;
+    bottom: 16%;
+    top: 34%;
+    left: 17%;
+    right: 19%;
+    width: 63%;
+    height: 50%;
+    padding: 0 5px; 
 }
 .seperator {
-    padding: 20px;
+    padding: 26px;
 }
 #places {
     font-size: 50px; 
