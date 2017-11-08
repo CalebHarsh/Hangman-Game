@@ -4,7 +4,7 @@ html {
     font-family: 'VT323', monospace;
 }
 body{
-    font-size: 32px;
+    font-size: 28px;
     background-image: url("../images/desert.jpg");
     background-size: 100% 100%; 
 }
@@ -32,7 +32,7 @@ h2 {
 }
 
 .background {
-    width: 70%; 
+    width: 50%; 
     margin: 10px auto; 
     position: relative; 
     overflow: auto; 
@@ -52,31 +52,42 @@ img {
     padding: 0 5px; 
 }
 .seperator {
-    padding: 30px;
+    padding: 13px;
 }
 #places {
-    font-size: 64px; 
+    font-size: 55px; 
     letter-spacing: 5px; 
 
 }
 .stats {
     text-align: left;
 }
-@media screen and (max-width: 768px ) {
-    .background {
-        width: 80%; 
+@media screen and (max-width: 980px ) {
+    body {
+        font-size: 20px; 
     }
     #places {
-        font-size: 50px; 
-    }
-    body {
-        font-size: 28px; 
+        font-size: 35px;
     }
     .seperator {
-        padding: 26px;
+        padding: 10px;
+    }
+} 
+@media screen and (max-width: 768px ) {
+    .background {
+        width: 70%; 
+    }
+    #places {
+        font-size: 33px; 
+    }
+    body {
+        font-size: 22px; 
+    }
+    .seperator {
+        padding: 7px;
     }
 }
-@media screen and (max-width: 420px ) {
+@media screen and (max-width: 640px ) {
     h1 {
         font-size: 50px;
     }
@@ -102,13 +113,13 @@ img {
         width: 95%; 
     }
     #places {
-        font-size: 28px; 
+        font-size: 24px; 
     }
     body {
         font-size: 16px; 
     }
     .seperator {
-        padding: 6px;
+        padding: 3px;
     }
     
 }
