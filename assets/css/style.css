@@ -4,8 +4,9 @@ html {
     font-family: 'VT323', monospace;
 }
 body{
-    font-size: 24px;
-    background-color: red; 
+    font-size: 32px;
+    background-image: url("../images/desert.jpg");
+    background-size: 100% 100%; 
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Peralta', cursive; 
@@ -31,13 +32,13 @@ h2 {
 }
 
 .background {
-    background-image: url("../images/wanted.jpg");
-    background-size: 100%; 
-    background-repeat: no-repeat; 
-    height: 700px;
-    width: 60%;
+    width: 70%; 
     margin: 10px auto; 
     position: relative; 
+    overflow: auto; 
+}
+img {
+    width: 100%; 
 }
 .gameScreen {
     text-align: center;
@@ -51,13 +52,63 @@ h2 {
     padding: 0 5px; 
 }
 .seperator {
-    padding: 26px;
+    padding: 30px;
 }
 #places {
-    font-size: 50px; 
+    font-size: 64px; 
     letter-spacing: 5px; 
 
 }
 .stats {
     text-align: left;
+}
+@media screen and (max-width: 768px ) {
+    .background {
+        width: 80%; 
+    }
+    #places {
+        font-size: 50px; 
+    }
+    body {
+        font-size: 28px; 
+    }
+    .seperator {
+        padding: 26px;
+    }
+}
+@media screen and (max-width: 420px ) {
+    h1 {
+        font-size: 50px;
+    }
+    .background {
+        width: 90%; 
+    }
+    #places {
+        font-size: 32px; 
+    }
+    body {
+        font-size: 18px; 
+    }
+    .seperator {
+        padding: 12px;
+    }
+
+}
+@media screen and ( max-width: 360px ) {
+    h1 {
+        font-size: 50px;
+    }
+    .background {
+        width: 95%; 
+    }
+    #places {
+        font-size: 28px; 
+    }
+    body {
+        font-size: 16px; 
+    }
+    .seperator {
+        padding: 6px;
+    }
+    
 }

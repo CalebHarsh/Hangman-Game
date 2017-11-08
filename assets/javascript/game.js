@@ -13,8 +13,9 @@ var  newGame = {
     // checks to see if game is finished
     win : true ,
     // list of missed guesses
-    lettersGuessed : []
-
+    lettersGuessed : [] ,
+    // guesses 
+    guesses : 7
 }
  
 document.onkeyup = function(event) {
@@ -85,13 +86,18 @@ function printPlaces() {
 
 function printStats() {
       //sets up the stats section of the game 
-    var stats = "Letters Guessed : <br> <hr>";
-    document.getElementById("stat").innerHTML = stats; 
-    for (var i = 0; i < newGame.lettersGuessed.length; i++) {
-        document.getElementById("stat").innerHTML += newGame.lettersGuessed[i] + ", "; 
+    var stats = "Letters Guessed: <br> <hr>"; 
+    if (newGame.lettersGuessed.length >= 1) {
+        stats += newGame.lettersGuessed[0];
     }
-    document.getElementById("stat").innerHTML += " <br> <hr> Guesses Remaining: "
+    if (newGame.lettersGuessed.length >= 2) {
+        for (var i = 1; i < newGame.lettersGuessed.length; i++) {
+            stats += ", " + newGame.lettersGuessed[i]; 
+        }
+    }
+    stats += " <br> <hr> Guesses Remaining: "
     + newGame.guesses; 
+    document.getElementById("stat").innerHTML = stats; 
 }
 
 function startNew() { 
