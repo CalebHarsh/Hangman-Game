@@ -1,10 +1,15 @@
-
+$(document).ready( function () {
+    var audioElement = document.createElement("audio");
+    audioElement.setAttribute("src", "assets/cartoon_ricochet2.mp3");
+    audioElement.loop = true;
+    var victoryAudio = document.createElement("audio");
+    victoryAudio.setAttribute("src", "assets/victory.mp3");
 
     // GLobal variables
     var gameWords = ["COWBOYS", "GUNSLINGER", "SALOON", "HORSES", "TUMBLEWEED",
                     "DESERT", "TOMBSTONE", "WINCHESTER", "CADDLE", "PISTOL",
-                        "RANGER", "WANTED", "OUTLAW", "SHOOTOUT", "HIGH NOON", 
-                            "DODGE CITY", "TRAIN ROBBER", "DUEL"];
+                        "RANGER", "WANTED", "OUTLAW", "GUNFIGHT", "HIGH NOON", 
+                            "DODGE CITY", "TRAIN ROBBER", "DUEL", "QUICKDRAW", "SHOWDOWN"];
     var places = []; 
 
     // Game Object 
@@ -19,6 +24,7 @@
     }
     //  main function 
     document.onkeyup = function(event) {
+        //audioElement.pause();
         var test = event.keyCode;
         //accept only letters
         if (test >= 65 && test <= 90 ) {
@@ -45,6 +51,7 @@
                 if ( printPlaces() === newGame.word) {
                     alert("Congrats! You Won! \n You guessed the word correctly. Press any key to play again.");
                     newGame.win = true; 
+                    victoryAudio.play();
                 }
                 printStats(); 
             }
@@ -69,6 +76,8 @@
         if (got1 != true){
             // records failed letter guessed
             newGame.lettersGuessed.push(guess);  
+           audioElement.play();
+            setTimeout(function() { audioElement.pause(); }, 1500);
             // lowers lives or number of missed guess remaining
             newGame.guesses -= 1; 
         }
@@ -130,3 +139,4 @@
         }
     
     }
+}); 
