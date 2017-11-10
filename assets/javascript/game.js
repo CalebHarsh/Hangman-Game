@@ -1,6 +1,5 @@
 
 
-document.onload ( function { 
     // GLobal variables
     var gameWords = ["COWBOYS", "GUNSLINGER", "SALOON", "HORSES", "TUMBLEWEED",
                     "DESERT", "TOMBSTONE", "WINCHESTER", "CADDLE", "PISTOL",
@@ -130,4 +129,3 @@ document.onload ( function {
         }
     
     }
-});
