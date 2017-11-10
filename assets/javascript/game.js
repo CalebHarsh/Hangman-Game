@@ -3,12 +3,13 @@
     // GLobal variables
     var gameWords = ["COWBOYS", "GUNSLINGER", "SALOON", "HORSES", "TUMBLEWEED",
                     "DESERT", "TOMBSTONE", "WINCHESTER", "CADDLE", "PISTOL",
-                        "RANGER", "WANTED", "OUTLAW", "SHOOTOUT", "HIGH NOON"];
+                        "RANGER", "WANTED", "OUTLAW", "SHOOTOUT", "HIGH NOON", 
+                            "DODGE CITY", "TRAIN ROBBER", "DUEL"];
     var places = []; 
 
     // Game Object 
     var  newGame = { 
-
+        word: "" , 
         // checks to see if game is finished
         win : true ,
         // list of missed guesses
@@ -42,7 +43,7 @@
                 //loops to check word for user guess
                 checkGuess(usersGuess); 
                 if ( printPlaces() === newGame.word) {
-                    alert("Congrats! You Won! \n You guessed the word correctly. Press Ok to play again.");
+                    alert("Congrats! You Won! \n You guessed the word correctly. Press any key to play again.");
                     newGame.win = true; 
                 }
                 printStats(); 
